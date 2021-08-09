@@ -1,0 +1,116 @@
+::root{
+    --Mobile_width:375px;
+    --Desktop_width:1440px;
+    --Primary_pale_blue:hsl(225, 100%, 94%);
+    --Primary_bright_blue:hsl(245, 75%, 52%);
+    --Very_pale_blue: hsl(228, 100%, 98%);
+    --Desaturated_blue:hsl(224, 23%, 55%);
+    --Dark_blue:hsl(223, 47%, 23%);
+    --font_size:16px;
+}
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: var(--font_size);
+    background: red;
+}
+.banner{
+    width: 90%;
+    background:#fff;
+    max-width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.information{
+    padding: 25px 22px;
+}
+.banner .hero{
+    width: 100%;
+}
+.banner .payment{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: hsl(228, 100%, 98%);
+    padding: 20px 0;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+ .banner .information p{
+    color:hsl(224, 23%, 55%);
+}
+h2{
+    margin-bottom: 20px;
+    color:hsl(223, 47%, 23%);
+}
+
+.first_p{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.type{
+    margin-right: 1.875rem;
+}
+.type p:first-child{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+.payment a{
+    font-weight: 700;
+    color:hsl(245, 75%, 52%);
+}
+.button{
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+.payment_button{
+    display: block;
+    background:hsl(245, 75%, 52%);
+    color: #fff;
+    border-radius: 15px;
+    padding: 16px 0;
+    font-size: 14px;
+    margin-bottom: 23px;
+    box-shadow: 0px 20px 14px 4px hsl(244, 76%, 92%);
+}
+.cancel_button{
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 20px;
+}
+.payment_button:active{
+    background: #766CF1;
+}
+.payment a:active{
+    color: #766CF1;
+    text-decoration: none;
+}
+.cancel_button:active{
+color:hsl(223, 47%, 23%);
+}
+@media(min-width:376px){
+    body{
+        background: url("images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+    }
+}
+@media(max-width:375px) {
+    body{
+        background: url("images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+    }
+    
+}
