@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,14 +89,14 @@ h2{
     color: hsl(224, 23%, 55%);
     margin-bottom: 20px;
 }
-.payment_button:active{
+.payment_button:hover{
     background: #766CF1;
 }
-.payment a:active{
+.payment a:hover{
     color: #766CF1;
     text-decoration: none;
 }
-.cancel_button:active{
+.cancel_button:hover{
 color:hsl(223, 47%, 23%);
 }
 @media(min-width:376px){
